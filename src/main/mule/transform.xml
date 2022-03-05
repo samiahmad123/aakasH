@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<configuration doc:name="Configuration" doc:id="77ed4392-3445-4cef-af54-e196203e7f81" defaultErrorHandler-ref="transformError_Handler" />
+	<error-handler name="transformError_Handler" doc:id="febc8910-ee85-4459-ac80-08769b624a93" >
+		<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="6f9a8ae1-7235-4afe-b934-fe7f5f4429ad" >
+			<logger level="INFO" doc:name="Logger" doc:id="ed94cb6c-2889-435b-9d08-38838aebc101" />
+			<logger level="INFO" doc:name="Logger" doc:id="511d82ba-f6c6-46be-9987-bc542e575798" />
+		</on-error-propagate>
+	</error-handler>
+</mule>
